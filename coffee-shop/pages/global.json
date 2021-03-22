@@ -1,4 +1,9 @@
 {
   "title": "My Coffee House",
-  "description": "Welcome to our house of coffee! We hope you enjoy our broad selection of premium coffee from all over the world."
+  "description": "Welcome to our house of coffee! We hope you enjoy our broad selection of premium coffee from all over the world.",
+  "hours": [
+    { "day": "Monday - Friday", "time": "8am to 11pm" },
+    { "day": "Saturday", "time": "9am to 3am" },
+    { "day": "Sunday", "time": "9am to 11pm" }
+  ]
 }
