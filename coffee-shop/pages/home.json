@@ -1,7 +1,22 @@
 {
   "hero": {
-    "header": "Drink Healthy and Natural Coffee!",
-    "subtext": "At My Coffee House, We only brew the freshet coffee from all arround the world. We also serve pastries such as cupcakes and brownies.",
+    "header": "Speciality Coffee Roastery!",
+    "subtext": "All you need to feel better is coffee. Make your day great with our coffee!",
     "bg_image":"/images/barista.jpg"
+  },
+  "hero2": {
+    "header": "We make coffee with passion",
+    "subtext": "At My Coffee House, We only brew the freshet coffee from all arround the world. We also serve pastries such as cupcakes and brownies.",
+    "bg_image":"/images/barista-1.jpg"
+  },
+  "about":{
+      "header":"Welcome to My Coffee House",
+      "subtext":"Welcome to our house of coffee! We hope you enjoy our broad selection of premium coffee from all over the world.",
+      "bg_image":"/images/barista-2.jpg",
+      "images":[
+          {"image":"/images/coffee.jpg","caption":"Latte Coffee"},
+          {"image":"/images/tea.jpg","caption":"Honeybush Tea"},
+          {"image":"/images/cupcake.jpg","caption":"Pastries"}
+      ]
   }
 }
