@@ -3,12 +3,12 @@ const router = express.Router()
 
 router.get('/', (req, res, next) => {
 
-    const data = {
-        title: "My Coffee House",
-        description: "Welcome to our house of coffee! We hope you enjoy our broad selection of premium coffee from all over the world."
-    }
+    res.render('home', req.context)
+})
 
-    res.render('home', data)
+router.get('/blog', (req, res, next) => {
+
+    res.render('blog', req.context)
 })
 
 module.exports = router
