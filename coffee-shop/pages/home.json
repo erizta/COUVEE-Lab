@@ -6,11 +6,11 @@
   },
   "hero2": {
     "header": "We make coffee with passion",
-    "subtext": "At My Coffee House, We only brew the freshet coffee from all arround the world. We also serve pastries such as cupcakes and brownies.",
+    "subtext": "At COUVEE Lab, We only brew the freshet coffee from all arround the world. We also serve pastries such as cupcakes and brownies.",
     "bg_image": "/images/barista-1.jpg"
   },
   "about": {
-    "header": "Welcome to My Coffee House",
+    "header": "Welcome to COUVEE Lab",
     "subtext": "Welcome to our house of coffee! We hope you enjoy our broad selection of premium coffee from all over the world.",
     "bg_image": "/images/barista-2.jpg",
     "images": [
@@ -25,21 +25,27 @@
     "img_background":"/images/cafe.jpg",
     "members": [
       {
-        "name": "Josh",
+        "name": "Mark",
         "image": "/images/person_1.jpg",
-        "quote": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "quote": "The coffee here is as good as the best coffee I have had in Melbourne, and the smoothie bowls are really yummy too",
         "position": "Owner"
       },
       {
-        "name": "Gavin",
-        "image": "/images/person_4.jpg",
-        "quote": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "name": "Yitian",
+        "image": "/images/person_2.jpg",
+        "quote": "The first coffee shop that I visited during my stay and I kept going back. The staff was so welcoming and the prices for coffee are amazing. There is Wifi and lovely seating. It is a great coffee shops to meet new people in, as well it is very central in Ubud. The coolest thing was the Latte art that surprised me when I ordered. There was a Pirate in my Latte....so unique.",
         "position": "Co Owner"
       },
       {
-        "name": "Robert",
-        "image": "/images/person_2.jpg",
-        "quote": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "name": "Xian",
+        "image": "/images/person_3.jpg",
+        "quote": "This is my favourite coffee shop when I'm in Ubud. Freshly roasted coffee they can make with their own home made coconut milk if you want. Lovely staff, very friendly and helpful. You can get non coffee drinks too.",
+        "position": "Customer"
+      },
+      {
+        "name": "Yoon Soo",
+        "image": "/images/person_4.jpg",
+        "quote": "The baristas will cut open coconuts and blend the coconut water with coconut meat to make fresh coconut milk for your drinks! Staff is always so friendly and accommodating, and serious perfectionists when it comes to preparing drinks. Coffee always taste fresh and delicious!",
         "position": "Customer"
       }
     ]
