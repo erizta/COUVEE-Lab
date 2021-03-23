@@ -310,31 +310,36 @@
 				<div class="col-md-7 ftco-animate makereservation p-4 p-md-5">
 					<div class="heading-section ftco-animate mb-5">
 						<span class="subheading">Book a Table</span>
-						<h2 class="mb-4">Make Reservation</h2>
+						<h2 class="mb-4">Place Your Order!</h2>
 					</div>
-					<form action="#">
+					<form action="/order" method="POST">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="">Name</label>
-									<input type="text" class="form-control" placeholder="Your Name">
+									<input id="order-name" name="name" type="text" class="form-control"
+										placeholder="Your Name">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="">Email</label>
-									<input type="text" class="form-control" placeholder="Your Email">
+									<input id="order-email" name="email" type="text" class="form-control"
+										placeholder="Your Email">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
 									<label for="">Order</label>
-									<textarea type="text" class="form-control" rows="8" style="background:#f9f9f9 !important" placeholder="Describe your order here"></textarea>
+									<textarea id="order-description" name="order" type="text" class="form-control"
+										rows="8" style="background:#fffffa !important"
+										placeholder="Describe your order here"></textarea>
 								</div>
 							</div>
 							<div class="col-md-12 mt-3">
 								<div class="form-group">
-									<input type="submit" value="Make a Reservation" class="btn btn-primary py-3 px-5">
+									<input id="btn-order" type="submit" value="Place your order!"
+										class="btn btn-primary py-3 px-5">
 								</div>
 							</div>
 						</div>
@@ -347,6 +352,36 @@
 	{{>footer}}
 
 	{{>scripts}}
+
+	<script>
+		(function () {
+			console.log('Thank you for your order')
+			$('#btn-order').click(function (event) {
+				if (event) {
+					event.preventDefault()
+
+					var order = {
+						name: $('#order-name').val(),
+						email: $('#order-email').val(),
+						order: $('#order-description').val()
+
+					}
+					console.log('PLACE ORDER: ' + JSON.stringify(order))
+					$.ajax({
+						url: '/order',
+						method: 'post',
+						data: order,
+						success: function (resp) {
+							console.log('ORDER RECEIVED: ' + JSON.stringify(resp))
+						},
+						error: function (resp) {
+
+						}
+					})
+				}
+			})
+		})()
+	</script>
 
 </body>
 
