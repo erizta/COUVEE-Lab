@@ -32,12 +32,10 @@ router.get('/items', async (req, res, next) => {
 router.post('/order', async (req, res, next) => {
     const orderData = req.body
 
-    res.json(orderData)
-
-    // const orderCtr = controllers.order.instance()
-    // const order = await orderCtr.post(orderData)
+    const orderCtr = controllers.order.instance()
+    const order = await orderCtr.post(orderData)
     
-    // res.json(order)
+    res.json(order)
 })
 
 module.exports = router

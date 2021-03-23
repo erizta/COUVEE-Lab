@@ -337,7 +337,7 @@
 								</div>
 							</div>
 							<div class="col-md-12 mt-3">
-								<div class="form-group">
+								<div id="btn-order-container" class="form-group">
 									<input id="btn-order" type="submit" value="Place your order!"
 										class="btn btn-primary py-3 px-5">
 								</div>
@@ -355,7 +355,7 @@
 
 	<script>
 		(function () {
-			console.log('Thank you for your order')
+			// console.log('Thank you for your order')
 			$('#btn-order').click(function (event) {
 				if (event) {
 					event.preventDefault()
@@ -373,6 +373,7 @@
 						data: order,
 						success: function (resp) {
 							console.log('ORDER RECEIVED: ' + JSON.stringify(resp))
+							$('#btn-order-container').html('<h3>Thanks we will send you an email when your order is ready!</h3>')
 						},
 						error: function (resp) {
 
