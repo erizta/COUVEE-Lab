@@ -18,5 +18,9 @@
           {"image":"/images/tea.jpg","caption":"Honeybush Tea"},
           {"image":"/images/cupcake.jpg","caption":"Pastries"}
       ]
+  },
+  "team":{
+    "subheader":"Team",
+    "header":"Meet the Team"
   }
 }
